@@ -4,7 +4,7 @@ fun main() {
     ejemplo1()
 
     //TODO: Ahora crea otra función que lo eleve al cuadrado y evite las excepciones.
-    //ejemplo2()
+    ejemplo2()
 
     /* TODO:
      Mejorar la función anterior con lo siguiente:
