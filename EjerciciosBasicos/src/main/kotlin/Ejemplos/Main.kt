@@ -1,10 +1,15 @@
+package Ejemplos
+
+import Ejemplos.ejemplo1
+import Ejemplos.ejemplo2
+
 fun main() {
 
     //TODO: Crea una función que pida un número y te muestre el resultado de duplicarlo.
     ejemplo1()
 
     //TODO: Ahora crea otra función que lo eleve al cuadrado y evite las excepciones.
-    ejemplo2()
+    //ejemplo2()
 
     /* TODO:
      Mejorar la función anterior con lo siguiente:
