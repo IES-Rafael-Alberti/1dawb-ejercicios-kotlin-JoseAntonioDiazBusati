@@ -1,3 +1,5 @@
+import kotlin.math.roundToInt
+
 /**
  *Ejercicio 1.2.4
  * Escribe un programa que le pida al usuario una temperatura en grados Celsius,
@@ -7,7 +9,7 @@ fun ejercicio1(){
     print("Introduce una temperatura en Celsisus para convertirla en Fahrenheit: ")
     val celsius = readln().toDouble()
     val fahrenheit = ((celsius * 9/5) + 32)
-    println("La temperatura sería de $fahrenheit ºF.")
+    println("La temperatura sería de ${fahrenheit}ºF.")
 
 }
 /**
@@ -15,7 +17,14 @@ fun ejercicio1(){
  * Escribe un programa que pida el importe final de un artículo y calcule e imprima por pantalla
  * el IVA que se ha pagado y el importe sin IVA (suponiendo que se ha aplicado un tipo de IVA del 10%).
  */
-
+fun ejercicio2(){
+    print("Introduce el precio de un producto: ")
+    val articulo = readln().toDouble()
+    var iva = 0.1
+    val ivaprecio = (articulo * iva)
+    val precio = (articulo - ivaprecio)
+    println("Se ha pagado ${ivaprecio}€ de IVA y el importe sin IVA es de ${precio}€")
+}
 
 /**
  * Ejercicio 1.2.12
@@ -23,7 +32,14 @@ fun ejercicio1(){
  * y lo almacene en una variable,y muestre por pantalla la frase Tu índice de masa corporal es donde
  * es el índice de masa corporal calculado redondeado con dos decimales.
  */
-
+fun ejercicio3(){
+    print("Introduce su peso en kg: ")
+    val peso = readln().toInt()
+    print("Introduce su altura en m: ")
+    val altura = readln().toDouble()
+    val imc = (peso/(altura * altura))
+    println("Tu índice de masa corporal es de ${imc}.")
+}
 
 /**
  * Ejercicio 1.2.15
@@ -33,7 +49,9 @@ fun ejercicio1(){
  * introducida por el usuario. Después el programa debe calcular y mostrar por pantalla la cantidad de ahorros tras
  * el primer, segundo y tercer años. Redondear cada cantidad a dos decimales.
  */
+fun ejercicio4(){
 
+}
 
 /**
  * Ejercicio 1.2.18
@@ -42,7 +60,7 @@ fun ejercicio1(){
  * otra con todas las letras mayúsculas y otra solo con la primera letra del nombre y de los apellidos en mayúscula.
  * El usuario puede introducir su nombre combinando mayúsculas y minúsculas como quiera.
  */
-
+fun ejercicio5(){}
 
 /**
  * Ejercicio 1.2.20
